@@ -1,0 +1,53 @@
+/* site-iratiAzkarate2 */
+:root {
+  /* Mode 1 */
+  /* color */
+  --bg-color: #ffffff;
+  --card-bg: #efefef;
+  --text-color: #4a4a4a;
+}
+body.dark{
+  --bg-color: #1b1b1b;
+  --card-bg: #434343;
+  --text-color: #f6f6f6; 
+}
+
+body {
+    background-color:var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial;
+
+}
+.contenedor{
+    width: 1440px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Barriecito", system-ui;
+    font-size: 130px;
+    text-align: center;
+}
+
+.card{
+    width: 20%;
+    margin: 2%;
+    height: 300px;
+    background-color: var(--card-bg);
+    float: left;
+}
+
+@media (max-width:1024px){
+
+.contenedor{
+    width: 100%;
+}
+ h1{
+    font-size: 60px;
+ }
+.card {
+    width: 100%;
+    margin: 20px 0 50px 0;
+}
+
+}
